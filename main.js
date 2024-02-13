@@ -4,7 +4,9 @@ var heightBall1 = 100
 
 function onBallClick(elm){
     const randomNumber = getRandomInt(20, 61)
+    const randomColor = getRandomColor()
 
+    elm.style.backgroundColor = randomColor
     const elmP = document.querySelector('.ball p')
     if(widthBall1 >= 400){
         widthBall1 = randomNumber
@@ -18,10 +20,3 @@ function onBallClick(elm){
     elmP.innerText = `width : ${elm.style.width} height: ${elm.style.height}`
     }
 }
-
-
-function getRandomInt(min, max) {
-    const minCeiled = Math.ceil(min);
-    const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
-  }
