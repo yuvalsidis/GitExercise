@@ -16,14 +16,12 @@ body {
 }
 
 .ball {
-    margin-top: 300px;
+    margin-top: 150px;
     align-self: center;
     justify-self: center;
     display: grid;
     height: 100px;
     width: 100px;
-    max-width: 400px;
-    max-height: 400px;
     color: white;
     background-color: blue;
     border-radius: 50%;
@@ -34,7 +32,12 @@ body {
     overflow: hidden;
 }
 
-.ball p{
+.ball1 p{
+    justify-self: center;
+    align-self: center;
+}
+
+.ball2 p{
     justify-self: center;
     align-self: center;
 }
