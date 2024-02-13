@@ -5,10 +5,9 @@ body {
     position: relative; 
     display: grid;
     background-color: black;
-    top: 0;
     height: 100%;
     width: 100%;
-    
+
 }
 
 .heading {
@@ -17,19 +16,22 @@ body {
 }
 
 .ball {
+    margin-top: 300px;
     align-self: center;
     justify-self: center;
     display: grid;
     height: 100px;
     width: 100px;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
     color: white;
     background-color: blue;
     border-radius: 50%;
     font-size: 22px;
     font-weight: bold;
     line-height: normal;
+    transition: all 1s;
+    overflow: hidden;
 }
 
 .ball p{
